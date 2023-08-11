@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "start /B pnpm run dev-next & start /B pnpm run css",
+    "dev-next": "next dev",
     "css": "npx tailwindcss -i ./styles/config.css -o ./styles/index.css --watch --minify",
     "build": "next build",
     "start": "next start",
